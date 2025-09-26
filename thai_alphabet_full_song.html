@@ -30,6 +30,34 @@
         .navbar a:hover {
             color: white;
         }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ff69b4;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 0 0 10px 10px;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            margin: 0;
+            border-bottom: 1px solid rgba(0,0,0,0.1);
+        }
+        .dropdown-content a:hover {
+            background-color: hotpink;
+            color: white;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
         h1 {
             color: deeppink;
             font-size: 3em;
@@ -63,6 +91,12 @@
         <a href="thai_body_parts_blackpink.html">🩷 Body Parts</a>
         <a href="thai_adjectives_opposites.html">⚖️ Adjectives</a>
         <a href="thai_verbs_opposites.html">🔄 Verbs</a>
+        <div class="dropdown">
+            <a href="#" style="cursor: pointer;">📅 Lessons by Date ▼</a>
+            <div class="dropdown-content">
+                <a href="thai_lesson_2025-09-26.html">📅 Sep 26, 2025 - Conversation</a>
+            </div>
+        </div>
     </div>
 
     <h1>🎤 ก เอ๋ย ก ไก่ – Thai Alphabet Song 🎶</h1>
